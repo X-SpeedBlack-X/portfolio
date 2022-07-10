@@ -3,6 +3,6 @@
 @tailwind components;
 
 body {
-  @apply bg-black text-gray-100;
+  @apply bg-linearBg text-gray-100;
   -webkit-font-smoothing: antialiased;
 }
