@@ -1,9 +1,11 @@
-import { Header } from './components/Header'
+import { Nav } from './components/Nav'
+
+import { Routes } from './Routes'
 
 function App() {
   return (
     <div>
-      <Header />
+      <Routes />
     </div>
   )
 }
