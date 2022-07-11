@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        linearBg: 'linear-gradient(to right, #1b1429, #140f23) '
+        linearBg: 'linear-gradient(to right, #1b1429, #140f23)',
+        instagramBg:
+          'linear-gradient(to top, #feda75, #fa7e1e, #d62976,	#962fbf, #4f5bd5)'
       },
 
       keyframes: {
@@ -25,7 +27,8 @@ module.exports = {
           700: '#015F43'
         },
         blue: {
-          500: '#81D8F7'
+          500: '#81D8F7',
+          600: '#0e76a8 '
         },
         orange: {
           500: '#FBA94C'
@@ -50,6 +53,9 @@ module.exports = {
           700: '#121214',
           900: '#09090A',
           1000: '#202024'
+        },
+        black: {
+          200: '#171515'
         }
       }
     }
