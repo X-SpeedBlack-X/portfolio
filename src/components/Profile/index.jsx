@@ -1,8 +1,18 @@
 import { LocationMarkerIcon } from '@heroicons/react/outline'
+import { motion } from 'framer-motion'
 
 export function Profile({ icon, textIcon }) {
   return (
-    <div className="md:flex rounded-xl p-8 md:p-0 dark:bg-slate-800 mt-6">
+    <motion.div
+      animate="translateEnd"
+      initial="translateInitial"
+      transition={{ duration: 0.5 }}
+      variants={{
+        translateEnd: { translateY: 0 },
+        translateInitial: { translateY: 290 }
+      }}
+      className="md:flex rounded-xl p-11 md:p-0 border-2 border-purple-500 mt-6"
+    >
       <img
         className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
         src="assets/img.jpeg"
@@ -30,6 +40,6 @@ export function Profile({ icon, textIcon }) {
           </div>
         </figcaption>
       </div>
-    </div>
+    </motion.div>
   )
 }
