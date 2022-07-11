@@ -10,14 +10,23 @@ import {
 import { GitFork, Star } from 'phosphor-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 export function Nav() {
   const [toggle, setToggle] = useState(false)
   return (
-    <header className="border-b border-b-gray-300/30">
+    <motion.header
+      animate="visible"
+      initial="hidden"
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 1 } }
+      }}
+      className="border-b border-b-gray-300/30"
+    >
       <nav className=" flex items-center  justify-between m-2 h-16 p-7 text-lg ">
         <span className=" text-4xl text-purple-600  animate-pulse ">
-          &lt;IS &#47;&gt;
+          <Link to="/">&lt;IS &#47;&gt;</Link>
         </span>
 
         <button
@@ -65,7 +74,8 @@ export function Nav() {
           >
             <a
               href="https://github.com/x-speedblack-x/portfolio"
-              className="flex items-center justify-center gap-1 target:blank"
+              className="flex items-center justify-center gap-1"
+              target="_blank"
             >
               {' '}
               <GitFork size={25} weight="duotone" />
@@ -74,6 +84,6 @@ export function Nav() {
           </i>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   )
 }
