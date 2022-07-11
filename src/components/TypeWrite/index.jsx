@@ -2,7 +2,7 @@ import TypewriterComponent from 'typewriter-effect'
 
 export function Typewriter() {
   return (
-    <span className=" text-green-300 ">
+    <span className=" text-green-300 text-4xl lg:flex">
       {' '}
       <TypewriterComponent
         options={{
@@ -12,33 +12,10 @@ export function Typewriter() {
           loop: true,
           cursorStyle: '_',
           typeSpeed: 70,
-          deleteSpeed: 55,
+          deleteSpeed: 40,
           delaySpeed: 1000
         }}
       />
     </span>
   )
 }
-
-/* 
-import React from 'react'
-import TypewriterComponent from 'typewriter-effect'
-
-export function Typewriter() {
-  return (
-    <TypewriterComponent
-      options={{
-        strings: [
-          'Developer',
-          'Deep Learning Engineer',
-          'MERN Stack Developer',
-          'Open Source Contributor'
-        ],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 50
-      }}
-    />
-  )
-}
- */
