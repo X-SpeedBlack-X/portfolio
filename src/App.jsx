@@ -1,5 +1,3 @@
-import { Nav } from './components/Nav'
-
 import { Routes } from './Routes'
 
 function App() {
