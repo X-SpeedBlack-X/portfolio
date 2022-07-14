@@ -1,9 +1,9 @@
-import { Profile } from '../components/Profile'
+import { AboutContainer } from '../components/About'
 
 export function About() {
   return (
     <div>
-      <Profile />
+      <AboutContainer />
     </div>
   )
 }
