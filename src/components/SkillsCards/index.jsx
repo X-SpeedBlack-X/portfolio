@@ -6,7 +6,12 @@ import {
   DiNodejs
 } from 'react-icons/di'
 import { AiFillHtml5 } from 'react-icons/ai'
-import { SiTypescript } from 'react-icons/si'
+import {
+  SiChakraui,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiTypescript
+} from 'react-icons/si'
 
 export function SkillCard() {
   return (
@@ -38,6 +43,18 @@ export function SkillCard() {
 
         <div className="m-4 p-3 border-[1px] border-[#c889e6a2] rounded-md shadow-lg shadow-purple-500/30 lg:opacity-40 hover:opacity-80 hover:scale-110 hover:border-purple-200 hover:border-2 flex justify-center items-center transition-all">
           <DiGit size={90} />
+        </div>
+
+        <div className="m-4 p-3 border-[1px] border-[#c889e6a2] rounded-md shadow-lg shadow-purple-500/30 lg:opacity-40 hover:opacity-80 hover:scale-110 hover:border-purple-200 hover:border-2 flex justify-center items-center transition-all">
+          <SiTailwindcss size={90} />
+        </div>
+
+        <div className="m-4 p-3 border-[1px] border-[#c889e6a2] rounded-md shadow-lg shadow-purple-500/30 lg:opacity-40 hover:opacity-80 hover:scale-110 hover:border-purple-200 hover:border-2 flex justify-center items-center transition-all">
+          <SiStyledcomponents size={90} />
+        </div>
+
+        <div className="m-4 p-3 border-[1px] border-[#c889e6a2] rounded-md shadow-lg shadow-purple-500/30 lg:opacity-40 hover:opacity-80 hover:scale-110 hover:border-purple-200 hover:border-2 flex justify-center items-center transition-all">
+          <SiChakraui size={90} />
         </div>
       </div>
     </>
