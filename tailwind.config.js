@@ -13,11 +13,18 @@ module.exports = {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-30deg)' },
           '50%': { transform: 'rotate(9deg)' }
+        },
+
+        float: {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-25px)' },
+          '100%': { transform: 'translateY(0px)' }
         }
       },
 
       animation: {
-        wave: 'wiggle 1s ease-in-out infinite'
+        wave: 'wiggle 1s ease-in-out infinite',
+        float: 'float 5s ease-in-out infinite'
       },
 
       colors: {
