@@ -47,9 +47,9 @@ export function HomeContainer() {
           hidden: { opacity: 0 },
           visible: { opacity: 1, transition: { duration: 1 } }
         }}
-        className="flex flex-col lg:flex-row items-center lg:justify-around p-[45px] mt-36  "
+        className="flex flex-col lg:flex-row items-center lg:justify-around p-[45px] mt-36"
       >
-        <div className="space-y-4 text-lg w-2/3 ">
+        <div className="space-y-4 text-lg w-2/3">
           <h2 className="uppercase text-center text-4xl">
             Deixa eu me<span className="text-purple-500"> apresentar</span> para
             vocês
@@ -58,8 +58,8 @@ export function HomeContainer() {
           <p>
             {' '}
             Eu conheci e me apaixonei pela programação quando eu estava no meu
-            ensino. E deste então não consigo me ver sem ela. Fazer o quê, né?
-            🤷‍♂️
+            ensino médio. E deste então não consigo me ver sem ela. Fazer o quê,
+            né? 🤷‍♂️
           </p>
 
           <p>
