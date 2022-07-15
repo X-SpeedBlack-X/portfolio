@@ -1,4 +1,4 @@
-import TypewriterComponent from 'typewriter-effect'
+import TypewriterComponent from 'typewriter-effect';
 
 export function Typewriter() {
   return (
@@ -13,9 +13,9 @@ export function Typewriter() {
           cursorStyle: '_',
           typeSpeed: 70,
           deleteSpeed: 40,
-          delaySpeed: 1000
+          delaySpeed: 1000,
         }}
       />
     </span>
-  )
+  );
 }
