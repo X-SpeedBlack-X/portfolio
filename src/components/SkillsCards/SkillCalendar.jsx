@@ -1,4 +1,4 @@
-import GitHubCalendar from 'react-github-calendar'
+import GitHubCalendar from 'react-github-calendar';
 
 export function SkillCalendar() {
   return (
@@ -12,5 +12,5 @@ export function SkillCalendar() {
         blockMargin={5}
       />
     </div>
-  )
+  );
 }
