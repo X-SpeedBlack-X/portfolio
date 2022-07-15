@@ -1,11 +1,11 @@
-import { Routes } from './Routes'
+import { Routes } from './Routes';
 
 function App() {
   return (
     <div>
       <Routes />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
