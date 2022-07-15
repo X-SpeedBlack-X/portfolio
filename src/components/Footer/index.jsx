@@ -6,7 +6,11 @@ export function Footer() {
 
         <p>
           Criado com ♥ pelo{' '}
-          <a href="https://github.com/x-speedblack-x" target="_blank">
+          <a
+            href="https://github.com/x-speedblack-x"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span className="text-purple-600 hover:text-purple-200">
               Isaque.S
             </span>
@@ -15,5 +19,5 @@ export function Footer() {
         <p>Copyright © 2022 </p>
       </div>
     </footer>
-  )
+  );
 }
