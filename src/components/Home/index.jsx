@@ -1,7 +1,5 @@
-import { Socials } from '../Socials'
-import { Typewriter } from '../TypeWrite'
-import { motion } from 'framer-motion'
-import { Footer } from '../Footer'
+import { motion } from 'framer-motion';
+import { Typewriter } from '../TypeWrite';
 
 export function HomeContainer() {
   return (
@@ -11,7 +9,7 @@ export function HomeContainer() {
         initial="hidden"
         variants={{
           hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { duration: 1 } }
+          visible: { opacity: 1, transition: { duration: 1 } },
         }}
         className="lg:flex mt-16 lg:justify-between text-center items-center"
       >
@@ -34,7 +32,7 @@ export function HomeContainer() {
         <div className="flex justify-center">
           <img
             src="/assets/home-main.svg"
-            alt="image de uma pessoa programando"
+            alt="imagem de uma pessoa programando"
             className="w-64 h-64 lg:w-80 lg:h-80 mt-9"
           />
         </div>
@@ -45,7 +43,7 @@ export function HomeContainer() {
         initial="hidden"
         variants={{
           hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { duration: 1 } }
+          visible: { opacity: 1, transition: { duration: 1 } },
         }}
         className="flex flex-col lg:flex-row items-center lg:justify-around p-[45px] mt-36"
       >
@@ -59,7 +57,7 @@ export function HomeContainer() {
             {' '}
             Eu conheci e me apaixonei pela programação quando eu estava no meu
             ensino médio. E deste então não consigo me ver sem ela. Fazer o quê,
-            né? 🤷‍♂️
+            né? 🤷🏾‍♂️
           </p>
 
           <p>
@@ -88,8 +86,6 @@ export function HomeContainer() {
           />
         </div>
       </motion.div>
-      <Socials />
-      <Footer />
     </>
-  )
+  );
 }
