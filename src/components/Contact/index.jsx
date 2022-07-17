@@ -1,19 +1,10 @@
-import { motion } from 'framer-motion';
 import { DownloadIcon } from '@heroicons/react/outline';
 import { Socials } from '../Socials';
+import { Motion } from '../Motion';
 
 export function ContactContainer() {
   return (
-    <motion.div
-      animate="rotateEnd"
-      initial="rotateInitial"
-      transition={{ duration: 0.7 }}
-      variants={{
-        rotateEnd: { rotateY: 0 },
-        rotateInitial: { rotateY: 200 },
-      }}
-      className="mt-10 p-[45px]"
-    >
+    <Motion className="mt-10 p-[45px]">
       <div className="flex flex-col justify-center items-center text-center gap-3">
         <h2 className="text-3xl">
           Como <span className="text-purple-200">você</span> pode entrar em
@@ -40,6 +31,6 @@ export function ContactContainer() {
       <div>
         <Socials />
       </div>
-    </motion.div>
+    </Motion>
   );
 }
