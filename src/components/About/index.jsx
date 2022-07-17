@@ -23,7 +23,7 @@ const ICONHAND = [
 function IconHand({ textIcon }) {
   return (
     <i className="flex items-center gap-1 ">
-      <HandPointing className="rotate-90" /> {textIcon}
+      <HandPointing weight="duotone" className="rotate-90" /> {textIcon}
     </i>
   );
 }
