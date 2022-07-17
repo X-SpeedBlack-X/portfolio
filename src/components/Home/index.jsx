@@ -16,7 +16,7 @@ export function HomeContainer() {
         <div className="flex flex-col p-[45px]">
           <div className="lg:flex  mb-2 text-4xl gap-2 ">
             <h1>Hello, Friend </h1>
-            <span className="inline-block  animate-wave">👋🏼</span>
+            <span className="inline-block animate-wave">👋🏼</span>
           </div>
 
           <div className="lg:flex text-4xl gap-2">
