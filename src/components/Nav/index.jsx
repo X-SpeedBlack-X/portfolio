@@ -70,7 +70,7 @@ export function Nav() {
       }}
       className="border-b border-b-gray-300/30"
     >
-      <nav className=" flex items-center justify-between m-2 h-16 p-7 text-lg ">
+      <nav className="flex items-center justify-between m-2 h-16 p-7 text-lg ">
         <span className=" text-4xl text-purple-200  animate-pulse">
           <Link to="/">&lt;IS &#47;&gt;</Link>
         </span>
