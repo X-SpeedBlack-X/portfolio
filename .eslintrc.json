@@ -17,6 +17,8 @@
     "import/prefer-default-export": "off",
     "react/jsx-one-expression-per-line": "off",
     "no-return-assign": "off",
+    "import/no-extraneous-dependencies": "off",
+    "object-curly-newline": "off",
     "prettier/prettier": "error",
     "indent": "off",
     "react/prop-types": "off",
