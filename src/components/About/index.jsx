@@ -4,7 +4,7 @@ import { SkillCalendar } from '../SkillsCards/SkillCalendar';
 import { SkillTools } from '../SkillsCards/SkillTools';
 import { Motion } from '../Motion';
 
-const ICONHAND = [
+const ICON_HAND = [
   {
     id: 1,
     text: 'Gosto de jogar',
@@ -35,7 +35,7 @@ export function AboutContainer() {
         className="flex flex-col lg:flex-row items-center lg:justify-around
         p-[45px]"
       >
-        <div className="space-y-4 text-lg w-[90%]">
+        <div className="space-y-4 text-lg w-full mt-16">
           <h2 className="text-4xl text-center p-7">
             Sobre <span className="text-purple-200">mim</span>
           </h2>
@@ -50,8 +50,8 @@ export function AboutContainer() {
           <div>
             <p>Coisas que eu gosto de fazer:</p>
             <i className="flex flex-col ">
-              {ICONHAND.map((icons) => (
-                <IconHand key={icons.id} textIcon={icons.text} />
+              {ICON_HAND.map((icon) => (
+                <IconHand key={icon.id} textIcon={icon.text} />
               ))}
             </i>
           </div>
@@ -77,25 +77,25 @@ export function AboutContainer() {
           <SkillCard />
         </div>
 
-        <div className="flex justify-center text-4xl mt-40 gap-2">
+        <div className="flex justify-center items-center text-4xl mt-40 gap-2">
           <h2 className="mb-5">
             <span className="text-purple-200">Ferramentas</span> de uso
           </h2>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center ">
           <SkillTools />{' '}
         </div>
 
-        <div className="flex justify-center text-4xl mt-40 gap-2">
+        <div className="flex flex-col justify-center items-center text-4xl mt-40 gap-2">
           <h2 className="flex gap-2 mb-5">
             Dias dos
             <span className="text-purple-200">commits</span>
           </h2>
-        </div>
 
-        <div className="flex justify-center items-center">
-          <SkillCalendar />
+          <div>
+            <SkillCalendar />
+          </div>
         </div>
       </Motion>
     </>
