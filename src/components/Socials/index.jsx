@@ -37,7 +37,7 @@ function SocialLinks({ icon: Icon, href, target, variant = 'primary' }) {
   return (
     <i
       className={clsx(
-        'flex justify-center items-center transition-colors  bg-purple-500 rounded-full w-11 h-11',
+        'flex justify-center items-center transition-colors bg-purple-500 rounded-full w-11 h-11',
         Variants[variant]
       )}
     >
@@ -66,7 +66,7 @@ export function Socials() {
         <span className="text-purple-500"> conectar </span>comigo
       </p>
 
-      <div className="flex justify-center gap-5 mt-4 hover:backgro ">
+      <div className="flex justify-center gap-5 mt-4">
         {SOCIALLINKS.map((social) => (
           <SocialLinks
             key={social.id}
