@@ -48,7 +48,7 @@ export function HomeContainer() {
         className="flex flex-col lg:flex-row items-center lg:justify-around p-[45px] mt-36"
       >
         <div className="space-y-4 text-lg w-2/3">
-          <h2 className="uppercase text-center text-4xl">
+          <h2 className="inline-block uppercase text-4xl">
             Deixa eu me<span className="text-purple-500"> apresentar</span> para
             vocês
           </h2>
@@ -61,7 +61,7 @@ export function HomeContainer() {
           </p>
 
           <p>
-            Eu amo as linguagens e tenho interesse:{' '}
+            Linguagens que eu mais gosto e tenho interesse:{' '}
             <span className="text-purple-500">
               JavaScript, Python, HTML, CSS e PHP{' '}
             </span>
