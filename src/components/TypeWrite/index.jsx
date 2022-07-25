@@ -6,8 +6,11 @@ export function Typewriter() {
       {' '}
       <TypewriterComponent
         options={{
-          strings: ['Front-end Junior', 'Desenvolvedor Web e Mobile', ''],
-
+          strings: [
+            'Front-end Junior',
+            'Desenvolvedor Web e Mobile',
+            'Entusiasta da tecnologia',
+          ],
           autoStart: true,
           loop: true,
           cursorStyle: '_',
