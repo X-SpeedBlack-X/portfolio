@@ -47,10 +47,10 @@ const NAVLINKS = [
     text: 'Contato',
   },
 ];
-function NavLink({ href, icon: Icon, text }) {
+function NavLink({ href, icon: Icon, text, ...rest }) {
   return (
-    <li className="hover:text-purple-200 hover:border-b-4 hover:border-b-purple-200 transition-colors ">
-      <Link to={href} className="flex gap-1">
+    <li className="hover:text-purple-200 hover:border-b-4 hover:border-b-purple-200 transition-colors">
+      <Link to={href} className="flex gap-1" {...rest}>
         <Icon className="w-6 h-6" /> {text}
       </Link>
     </li>
@@ -59,7 +59,7 @@ function NavLink({ href, icon: Icon, text }) {
 
 export function Nav() {
   const [toggle, setToggle] = useState(false);
-  const [showNav, setShowNav] = useState(false);
+
   return (
     <motion.header
       animate="visible"
@@ -70,8 +70,26 @@ export function Nav() {
       }}
       className="border-b border-b-gray-300/30"
     >
-      <nav className="flex items-center justify-between m-2 h-16 p-7 text-lg ">
-        <span className=" text-4xl text-purple-200  animate-pulse">
+      {toggle && (
+        <div className="flex flex-col h-2/4 lg:hidden z-50">
+          <div className="flex items-center justify-center w-full h-3/5 bg-navBg fixed z-40 pt-6  mt-8 overflow-hidden ">
+            <ul className="space-y-6 text-xl mt-4">
+              {NAVLINKS.map((link) => (
+                <NavLink
+                  href={link.href}
+                  icon={link.icon}
+                  text={link.text}
+                  key={link.id}
+                  onClick={() => setToggle(!toggle)}
+                />
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+
+      <nav className="flex items-center justify-between fixed w-full h-16 px-7 text-lg opacity-95 z-50 bg-[url('assets/home-bg.jpg')] bg-cover bg-no-repeat">
+        <span className=" text-4xl text-purple-200 animate-pulse">
           <Link to="/">&lt;IS &#47;&gt;</Link>
         </span>
 
@@ -81,12 +99,9 @@ export function Nav() {
           onClick={() => setToggle(!toggle)}
         >
           {toggle ? (
-            <XIcon
-              className="text-white"
-              onClick={() => setShowNav(!showNav)}
-            />
+            <XIcon className="text-purple-200" />
           ) : (
-            <MenuAlt3Icon className="text-white" />
+            <MenuAlt3Icon className="text-purple-200" />
           )}
         </button>
 
