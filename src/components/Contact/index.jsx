@@ -1,18 +1,34 @@
+import { useState, useEffect } from 'react';
+
 import { DownloadIcon } from '@heroicons/react/outline';
 import { Socials } from '../Socials';
 import { Motion } from '../Motion';
 
 export function ContactContainer() {
+  const [image, setImage] = useState({ avatar: '' });
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(
+        'https://api.github.com/users/x-speedblack-x'
+      );
+      const data = await response.json();
+
+      setImage({ avatar: data.avatar_url });
+    }
+    fetchData();
+  }, []);
+
   return (
     <Motion className="mt-10 p-[45px]">
-      <div className="flex flex-col justify-center items-center text-center gap-3">
+      <div className="flex flex-col justify-center items-center text-center gap-3 mt-16">
         <h2 className="text-3xl">
           Como <span className="text-purple-200">você</span> pode entrar em
           contato <span className="text-purple-200">comigo</span>?
         </h2>
 
         <img
-          src="assets/profile.jpeg"
+          src={image.avatar}
           alt="foto de perfil pessoal"
           width={130}
           height={130}
